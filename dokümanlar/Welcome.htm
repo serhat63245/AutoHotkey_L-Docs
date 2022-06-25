@@ -1,0 +1,9 @@
+~CapsLock::Suspend, % GetKeyState("CapsLock","t") ? "Off" : "On" ; CAPS LOCK kapalı olduğunda kilitlenir
+
+Z:: ; hızlı
+While GetKeyState("Z","P")
+{
+Send, {x down}
+sleep, 25
+Send, {x up}
+sleep, 25
